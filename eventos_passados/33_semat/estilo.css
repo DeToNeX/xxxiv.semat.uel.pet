@@ -1,0 +1,26 @@
+.exemplo {
+    background-color: black;
+}
+.img-fluid{
+    max-width:10%;
+    max-height:10%;
+}
+.container-nav-bar{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: flex-start;
+}
+.img-corpo{
+	max-width:100%;
+	height:auto;  
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.centralize-tudo{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
