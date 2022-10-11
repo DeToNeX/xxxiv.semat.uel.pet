@@ -1,0 +1,10 @@
+Os textos para a confecção dos Anais deverão ser enviados para semat@uel.br, impreterivelmente, até o dia 09/10/2018. 
+
+
+O trabalho aceito deverá seguir o seguinte modelo:
+
+
+Trabalho_Completo_nome_do(s)_autor(es).docx
+
+Trabalho_Completo_nome_do(s)_autor(es).tex
+

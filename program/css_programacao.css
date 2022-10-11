@@ -1,0 +1,361 @@
+.testimonial-group>.row {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.testimonial-group>.row>.col-xs-4 {
+    display: inline-block;
+    float: none;
+}
+
+
+
+:root {
+    --numDays: 5;
+    --numHours: 20;
+    --timeHeight: 120px;
+    --calBgColor: #deebfd;
+    --eventBorderColor: #f2d3d8;
+    --palestras: #eb734469;
+    --bate-papo: #eb734431;
+    --mesared: #34b241a1;
+    --gincana: #59bd382c;
+    --minicursos: #93c93b56;
+    --coffe: #9e9e9e73;
+    --sesTecLong: #23767cad;
+    --sesTecCurt: #23767c69;
+    --abrefecha: #e4e73e;
+    --livro: #dfa841;
+    --credenciamento: #eb7344;
+}
+
+
+@media (max-width: 768px){
+    :root{
+        --timeHeight: 150px;
+    }
+}
+
+.calendar {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto 1fr;
+    margin: 2rem;
+}
+
+.timeline {
+    display: grid;
+    grid-template-rows: repeat(2, 70px) repeat(5, var(--timeHeight)) repeat(2, 50px) repeat(2, var(--timeHeight)) repeat(1, 30px)  repeat(1, var(--timeHeight)) repeat(1, 50px) repeat(9, var(--timeHeight));
+}
+
+.days {
+    display: grid;
+    grid-column: 2;
+    gap: 5px;
+    grid-template-columns: repeat(5, minmax(150px, 1fr));
+}
+
+.events {
+    display: grid;
+    grid-template-rows: repeat(1, 70px) repeat(5, var(--timeHeight)) repeat(1, 65px)  repeat(1, 35px) repeat(2, var(--timeHeight)) repeat(1, 45px)  repeat(1, var(--timeHeight)) repeat(1, 35px) repeat(9, var(--timeHeight));
+    grid-template-columns: repeat(1, minmax(150px, 1fr));
+    border-radius: 5px;
+    background: var(--calBgColor);
+}
+
+.date {
+    display: flex;
+    gap: 1em;
+    justify-content: start;
+    padding-top: 70px;
+}
+
+.date-num {
+    font-size: 2rem;
+    font-weight: 600;
+    display: inline;
+}
+
+.date-day {
+    display: inline;
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+
+.event:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+/* // Place on Timeline */
+
+
+.start-1 {
+    grid-row-start: 1;
+}
+
+.start-2 {
+    grid-row-start: 2;
+}
+
+.start-3 {
+    grid-row-start: 3;
+}
+
+.start-4 {
+    grid-row-start: 4;
+}
+
+.start-5 {
+    grid-row-start: 5;
+}
+
+.start-6 {
+    grid-row-start: 6;
+}
+
+.start-7 {
+    grid-row-start: 7;
+}
+
+.start-8 {
+    grid-row-start: 8;
+}
+
+.start-9 {
+    grid-row-start: 9;
+}
+
+.start-10 {
+    grid-row-start: 10;
+}
+
+.start-11 {
+    grid-row-start: 11;
+}
+
+.start-12 {
+    grid-row-start: 12;
+}
+
+.start-13 {
+    grid-row-start: 13;
+}
+
+.start-14 {
+    grid-row-start: 14;
+}
+
+.start-15 {
+    grid-row-start: 15;
+}
+
+.start-16 {
+    grid-row-start: 16;
+}
+
+.start-17 {
+    grid-row-start: 17;
+}
+
+.start-18 {
+    grid-row-start: 18;
+}
+.start-19 {
+    grid-row-start: 19;
+}
+
+.start-20 {
+    grid-row-start: 20;
+}
+
+
+.start-21 {
+    grid-row-start: 21;
+}
+.start-22 {
+    grid-row-start: 22;
+}
+.start-23 {
+    grid-row-start: 23;
+}
+/* ------------ ENDS */
+.end-1 {
+    grid-row-end: 1;
+}
+
+.end-2 {
+    grid-row-end: 2;
+}
+
+.end-3 {
+    grid-row-end: 3;
+}
+
+.end-4 {
+    grid-row-end: 4;
+}
+
+.end-5 {
+    grid-row-end: 5;
+}
+
+.end-6 {
+    grid-row-end: 6;
+}
+
+.end-7 {
+    grid-row-end: 7;
+}
+
+
+.end-8 {
+    grid-row-end: 8;
+}
+
+.end-9 {
+    grid-row-end: 9;
+}
+
+.end-10 {
+    grid-row-end: 10;
+}
+
+.end-11 {
+    grid-row-end: 11;
+}
+
+.end-12 {
+    grid-row-end: 12;
+}
+
+.end-13 {
+    grid-row-end: 13;
+}
+
+.end-14 {
+    grid-row-end: 14;
+}
+
+.end-15 {
+    grid-row-end: 15;
+}
+
+.end-16 {
+    grid-row-end: 16;
+}
+
+.end-17 {
+    grid-row-end: 17;
+}
+
+.end-18 {
+    grid-row-end: 18;
+}
+
+.end-19 {
+    grid-row-end: 19;
+}
+
+.end-20 {
+    grid-row-end: 20;
+}
+
+.end-21 {
+    grid-row-end: 21;
+}
+
+.end-22 {
+    grid-row-end: 22;
+}
+
+.end-23 {
+    grid-row-end: 23;
+}
+/* // Event */
+
+
+
+.event {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--eventBorderColor);
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin: 0.2rem;
+    background: white;
+    transition: box-shadow .3s;
+    cursor: pointer;
+}
+
+.title {
+    font-weight: 600;
+    margin: 0.25rem;
+    text-decoration: none;
+    color: black;
+    text-transform: none;
+    background-color: none;
+}
+
+.time {
+    margin: 0.25rem;
+    text-decoration: none;
+    color: black;
+    text-transform: none;
+    background-color: none;
+}
+
+
+.space,
+.date {
+    height: 145px
+}
+
+/* // Global / Etc */
+
+
+
+.credenciamento {
+    background: var(--credenciamento);
+}
+
+.livro{
+    background: var(--livro);
+
+}
+
+.abre-fecha {
+    background: var(--abrefecha);
+}
+
+.mincur {
+    background: var(--minicursos);
+}
+
+.gincana{
+    background: var(--gincana);
+}
+
+.palestras {
+    background: var(--palestras);
+}
+
+.mesared {
+    background: var(--mesared);
+}
+
+.coffebreak {
+    background: var(--coffe);
+}
+
+.bate-papo{
+    background: var(--bate-papo);
+}
+
+.ses-tec-curt {
+    background: var(--sesTecCurt);
+}
+
+.ses-tec-long {
+    background: var(--sesTecLong);
+}
