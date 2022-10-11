@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <title>SEMAT - Outras Atividades</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="https://www.uel.br/eventos/semat/midia/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://www.uel.br/eventos/semat/estilo.css">
+
+  </head>
+  <body  class="pb-4">
+    <div id="header2"></div>
+
+    <main class="container">
+  
+        <div class="jumbotron">
+          <h1 class="display-5" style="color:black; text-align:center">
+            
+            Informações sobre outras atividades
+
+          </h1>
+          
+          <hr class="hr-thick">
+          
+        <p id="credenciamento"><b>"Credenciamento"</b> <br>
+            O credenciamento é parte essencial do evento. Nele você receberá seu crachá, que é por onde vamos identificá-lo, e seu kit participante. Só é necessário se credenciar uma única vez. Entretanto, lembre-se de passar na secretaria do evento todos os dias para indicar sua presença.
+        </p>
+
+        <p id="coffe"><b>"Coffee-Break e Pôsteres"</b> <br>
+            O coffee-break é um pequeno intervalo que contará com café e lanche  enquanto acompanhamos as apresentações de pôsteres feita pelos participantes que submeteram seus resumos. Com isso, integramos os apresentadores e os participantes do evento.
+        </p>
+
+        <p id="abertura"><b>"Solenidade de Abertura"</b> <br>
+            Haverá uma apresentação do Quinteto de Cordas da Orquestra Sinfônica da UEL e participação da diversas autoridades universitárias para marcarmos o início do nosso evento.
+        </p>
+
+        <p id="encerramento"><b>"Premiação, Encerramento e Show"</b> <br>
+            Neste momento faremos uma pequena cerimônia de encerramento da XXXIV Semana da Matemática. Este momento contará com a premiação dos estudantes que mais pontuaram na Gincana Matemática. Por fim, haverá um Show de Talentos dos nossos estudantes, marcando o final da Semana da Matemática.
+        </p>
+
+        <p id="livro"><b>"Lançamento do Livro"</b> <br>
+            Como parte da programação da XXXIV Semana da Matemática, lançaremos o livro "Matemática: Um livro feito por alunos para alunos
+            ". Este é um livro autorado pelos estudantes do PET Matemática e que será disponibilizado gratuitamente, em forma de e-book, para todos os estudantes com interesse na matemática do ensino médio.
+        </p>
+
+        <p id="gincana"><b>"Gincana Matemática"</b> <br>
+            Trata-se de um desafio postado diariamente no site do nosso evento. Cada participante está convidado a resolver o problema e entregar sua solução na secretaria do evento. A Comissão Científica pontuará cada solução e, ao final do evento, haverá distribuição de prêmios para as mais altas pontuações.
+        </p>
+
+        <p id="bate-papo"><b>"Bate-Papo com Palestrantes"</b> <br>
+            Este é um momento em que nossos participantes podem dialogar, conversar e interagir, em formato de mesa-redonda, com os palestrantes do dia.
+        </p>
+      
+        </div>  
+    </div>
+  </main>
+
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script> 
+          $(document).ready(function() {
+            $('#header2').load('https://www.uel.br/eventos/semat/header.html');
+      });
+    </script>
+    <script>
+        $(document).ready(function () {
+            CheckForHighlight();
+        });
+
+        function CheckForHighlight() {
+            href = window.location.href;
+            values = href.split('?')[1] // Remove the url ".html?highlight=#try2"
+            highlight = values.split('=#')[1]; // divide em =# e pega o segundo parametro
+            $('#' + highlight).addClass('highlightedElem');
+            //highlightedElemclass has box shadow or border
+        }
+    </script>
+</body>
+</html>
