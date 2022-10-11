@@ -179,24 +179,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#header2').load('https://www.uel.br/eventos/semat/header.html');
-        });
-    </script>
-    <script>
-        $(document).ready(function () {
-            CheckForHighlight();
-        });
-
-        function CheckForHighlight() {
-            href = window.location.href;
-            values = href.split('?')[1] // Remove the url ".html?highlight=#try2"
-            highlight = values.split('=#')[1]; // divide em =# e pega o segundo parametro
-            $('#' + highlight).addClass('highlightedElem');
-            //highlightedElemclass has box shadow or border
-        }
-    </script>
+    <script src="https://www.uel.br/eventos/semat/scripts_java.js"></script>
 </body>
 
 </html>
